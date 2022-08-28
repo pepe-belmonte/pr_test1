@@ -1,0 +1,125 @@
+/* import de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+/* no he encontrado la fuente condensada de los bloques de banner Girl*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+
+/* estilos personalizados */
+/* sobreescribir estilo de bootstrap 5 para quitar padding */
+@media (min-width: 576px) {
+  .container, .container-fluid {
+    padding: 0;
+  }
+}
+
+/* sobreescribir estilo de bootstrap 5  para adaptar a max 1034px para 1100*/
+@media (min-width: 1100px) {
+  .container, .container-fluid {
+    max-width: 1034px;
+  }
+}
+
+.banner-title {
+  padding: 6px 0;
+}
+
+@media (min-width: 481px) {
+  .banner-title {
+    padding: 24px 0 12px 0;
+  }
+}
+
+.banner-container {
+  padding: 6px 0;
+}
+@media (min-width: 481px) {
+  .banner-container {
+    padding: 12px 0;
+  }
+}
+
+.row-girl {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-flow: row nowrap;
+}
+.col-girl_left {
+  padding-right: 4px;
+}
+.col-girl_right {
+  padding-left: 4px;
+}
+
+.banner-text_roboto {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.banner-text_raleway {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.banner-text_title {
+  font-size: 1.2em;
+  padding: 0;
+}
+@media (min-width: 481px) {
+  .banner-text_title {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 1100px) {
+  .banner-text_title {
+    font-size: 2.7em;
+  }
+}
+.banner-text_body {
+  font-size: 1em;
+}
+@media (min-width: 481px) {
+  .banner-text_body {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 1100px) {
+  .banner-text_body {
+    font-size: 1.8em;
+  }
+}
+
+.banner-text_button {
+  background-color: #e6f1e3;
+  text-transform: uppercase;
+  margin: 6px;
+  border-radius: 0;
+}
+
+.banner-link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-container {
+  padding: 24px 0;
+}
+
+.product-link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #000;
+}
+.product-link img {
+  max-width: 180px;
+}
+.product-title {
+  font-weight: 600;
+}
+.product-name {
+  font-weight: 400;
+  font-size: 0.875em;
+}
